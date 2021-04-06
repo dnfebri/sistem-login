@@ -8,7 +8,7 @@ $('.custom-file-input').on('change', function() {
 $('.form-check-input').on('click', function() {
     const menuId = $(this).data('menu');
     const roleId = $(this).data('role');
-    const base_url = "http://localhost/belajar/sistem-login/admin/"
+    const base_url = "http://localhost/dnfebri-github/sistem-login/admin/"
 
     $.ajax({
         url: base_url + "changeaccess",
@@ -18,6 +18,7 @@ $('.form-check-input').on('click', function() {
             roleId: roleId
         },
         success: function() {
+            // console.log(base_url + "roleaccess/" + roleId);
             document.location.href = base_url + "roleaccess/" + roleId;
         }
     });
