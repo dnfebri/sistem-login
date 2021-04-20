@@ -1,0 +1,20 @@
+Bahan : fremwork CI, SBAdmin, Fount Awesom.
+
+1. Persiapan - seting configurasi dan koneksi CI serta halaman Auth.
+2. Registration - Auth, Registration function (validation) dan menyiapkan DB.
+3. Login - Auth, Login Validation user redirect view dengan menggunakan session untuk menyimpan user dan role_id yang terdaftar sekaligus membuat method logout.
+4. Admin & User page - membuat landing page admin dan user, method di fokuskan ke Auth.
+5. Menu Management - memanagent akses tampilan side bar dengan memanfaatkan Database menggunakan sintac JOIN, menampilkan menu dengan Looping, koding fokus di side bar. + menambah Menu dengan insert dari intervace akses Admin.
+6. User Access - Membuat file function di Helpers dan menggunakan di setiap controllers, memanggil file helpers di autoload.
+7. Access Management - membuat User role yang mengakses method roleacces yang menerima role_id dengan membaut bantuan methot check_access di helpers dan untuk update fungsi user role menggunakan method jquery.
+8. Edit Profile - membuat function untuk edit profile beserta upload file (gambar) dengan fungsi form  enctype=multipart/form-data, tambahan untuk mengakali tampilan browser file yang tidak bisa berubah di script. ada fungsi hapus "unlink" file di method edit.
+9. Change Password = membuat ubah password seperti method ubah seperti biasanya dan roles form_validation
+seperti password registrasi, verivikasi password menggunakan function php password_verify().
+10. User Activation = User activation menggunakan gmail dan memerlukan konfigurasi, penjelasan lengkap ada di youtube WPU https://youtu.be/UXtjzZZY810 dan ada tambahan tabel user_token
+11. Forgot Password = Tambahan fungsi dari video terusan dari user activation yang juga menggunakan gmail. penjelasan lengkapnya ada di video yotube WPU https://youtu.be/L3w_f8FMwOM 
+
+SELESAI.
+
+
+
+Configurasi awal = ubah variabel "base_url" di config.php & script.js
